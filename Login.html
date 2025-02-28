@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+    backdrop-filter: blure(5px);
+}
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 18px;
+    color: #083c4f;
+    margin-bottom: 20px;
+}
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #083c4f;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: white;
+    color: #083c4f;
+    font-weight: bold;
+}
+
+.social-btn:hover{
+    border: 3px solid black;
+}
+
+.social-btn img {
+    width: 20px;
+}
+.or {
+    margin: 15px 0;
+    color: #555;
+}
+.signup-link {
+    margin-top: 15px;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+.signup-link:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="./images/download-removebg-preview.png" alt="Logo" class="logo">
+        <h2>Login into your OLX account</h2>
+        <div class="social-login">
+            <button class="social-btn"><img src="./images/google_2504739.png" alt="Google"> Login with Google</button>
+            <button class="social-btn"><img src="./images/facebook_4782334.png" alt="Facebook"> Login with Facebook</button>
+        </div>
+        <div class="or">OR</div>
+        <div class="social-login">
+            <button class="social-btn"><img src="./images/email_542638.png" alt="Email"> Login with Email</button>
+            <button class="social-btn"><img src="./images/telephone_12336021.png" alt="Phone"> Login with Phone</button>
+        </div>
+        <a href="#" class="signup-link">New to OLX? Create an account</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,529 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+}
+
+.logo {
+    color: #002f34;
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+
+}
+
+.logo img {
+    padding-left: 100px;
+    height: 99px;
+    margin-right: 10px;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding-left: 220px;
+    gap: 30px;
+
+}
+.item i.fa-car {
+    display: inline;
+    align-items: center;
+    background: white;
+    padding: 11px 11px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.item i.fa-car:hover{
+    background-color:#e7e7e7;
+}
+
+.item i.fa-building{
+    padding:11px 14px;
+    display: inline;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.item i.fa-building:hover{
+    background-color: #e7e7e7;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 400px;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+    
+}
+.search-bar button {
+    background: #00343a;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 160px;
+}
+
+.search-bar button:hover{
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth-links .nav-item a {
+    text-decoration: underline ;
+    color: black;
+ }
+ .auth-links .nav-item a:hover{
+    text-decoration: none;
+    color: navy;
+ }
+
+
+.sell-btn {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 5px solid;
+    cursor: pointer;
+    color: #002f34;
+    border-top-color: rgb(0, 242, 255);
+    border-left-color: rgb(255, 255, 0);
+    border-right-color: rgb(0, 60, 255) ;
+    border-bottom-color: rgb(247, 11, 11) ;
+}
+
+.sell-btn:hover{
+    color: #099bc4;
+}
+
+.sell-btn i {
+    margin-right: 4px;
+    cursor: pointer; 
+    color: #002f34;
+    position: inherit;
+}
+
+.sell-btn i:hover{
+    color: #099bc4;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 70px;
+    gap: 50px;
+
+}
+
+.main-content{
+    display: flex;
+    margin-left: 120px;
+    
+}
+
+.span{
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    color: #002b36;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 1300px;
+    min-height: 460px;
+    padding: 1px;
+    border-radius: 8px;
+    columns: 3;
+    column-gap: 1px;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown i {
+    margin-left: 1px;
+}
+
+.dropdown-content a{
+    display: flex;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+    padding: 1px 11px 10px 10px;
+}
+
+.dropdown-content a:hover{
+    color:  #6ccfd4;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #002b36;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #2ea915;
+}
+
+
+.H{
+    padding: 10px 100px;
+    color: #002f34;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 353px;
+    width: 1260px;
+    margin-left: 110px;
+    overflow: hidden;
+}
+
+.category{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+}
+
+.category img {
+    width:80px;
+    height: 80px;
+    box-sizing:inherit;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 40px;
+    background-color: #ffffff;
+}
+
+.category img:hover{
+    background-color: #ebe7e7;
+}
+
+.left-categories{
+    display: flex;
+    align-items: flex-start;
+    padding-right: 560px;
+}
+
+.category p {
+    color: #002b36;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.category a{
+    text-decoration: none;
+}
+
+.carousel-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel {
+    display: flex;
+}
+
+.similar-cars {
+    max-width: 1500px;
+    margin: auto;
+}
+h2 {
+    text-align: left;
+}
+.car-listing {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+.car-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 300px;
+}
+
+.car-card a{
+    text-decoration: none;
+    color: black;
+}
+
+.car-card p{
+    color: rgb(129, 129, 129);
+}
+
+.car-card p:hover{
+    color: black;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-container {
+    max-width: 100%
+    margin: 10px;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 270px;
+    text-align: left;
+    position: relative;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin: 2px 0;
+}
+
+.card p:hover{
+    color: black;
+}
+
+.similar-cars {
+    max-width: 1500px;
+    margin: auto;
+}
+h2 {
+    text-align: left;
+}
+.car-listing {
+    display: flex;
+    gap: 20px;
+}
+.car-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 300px;
+}
+
+.car-card a{
+    text-decoration: none;
+    color: black;
+}
+
+.car-card p{
+    color: rgb(129, 129, 129);
+}
+
+.car-card p:hover{
+    color: black;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.similar-bikes {
+    max-width: 100%;
+}
+h2 {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.bike-listing {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.bike-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 270px;
+    text-align: left;
+}
+
+.bike-card a{
+    text-decoration: none;
+    color: black;
+}
+
+.bike-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.bike-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.bike-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 2px 0;
+}
+
+.bike-card p:hover{
+    color: black;
+}
+
+footer {
+    background: #d8d9ec;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    width: 1500px;
+    height: 140px;
+    float: left;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1900px;
+    margin: auto;
+    padding: 20px 0;
+}
+.footer-links div {
+    min-width: 200px;
+}
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+.footer-links a {
+    color: rgb(148, 148, 148);
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-links a:hover{
+    color: black;
+}
+
+.footer-social img {
+    width: 120px;
+    margin: 5px;
+}
+
+.para{
+    background-color: #05343f;
+    color: white;
+    height: 20px;
+    text-align: center;
+    padding: 4px ;
+}
